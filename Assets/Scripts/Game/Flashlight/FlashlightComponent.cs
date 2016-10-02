@@ -19,6 +19,7 @@ public class FlashlightComponent : MonoBehaviour {
     {
         _input = GameObject.Find("Player").GetComponent<PlayerInputComponent>();
         _input.ToggleFlashlight += ToggleLight;
+
     }
 
     private PlayerInputComponent _input;
@@ -29,6 +30,8 @@ public class FlashlightComponent : MonoBehaviour {
        _isLightActive = !_isLightActive;
        _light.SetActive(_isLightActive);
     }
+
+   
 
     [SerializeField] private GameObject _light;
 

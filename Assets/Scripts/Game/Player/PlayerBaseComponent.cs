@@ -15,13 +15,15 @@ public class PlayerBaseComponent : MonoBehaviour {
 
     private void init()
     {
-
+        _input = GetComponent<PlayerInputComponent>();
     }
 
+    private PlayerInputComponent _input;
 
 	void Update () {
 	
-
+        _input.UpdateInput();
+	    
 	}
 
 

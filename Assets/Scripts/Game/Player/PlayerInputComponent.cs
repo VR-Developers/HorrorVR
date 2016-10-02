@@ -12,12 +12,14 @@ public class PlayerInputComponent : MonoBehaviour
 
     public event Action ToggleFlashlight;
 
+
     public void UpdateInput()
     {
         if (Input.GetMouseButtonDown(0))
         {
            
             ToggleFlashlight();
+
         }
 
     }
