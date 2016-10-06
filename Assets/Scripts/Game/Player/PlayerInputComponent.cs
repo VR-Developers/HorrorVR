@@ -12,14 +12,14 @@ public class PlayerInputComponent : MonoBehaviour
 
     public event Action ToggleFlashlight;
 
-
+    private MagnetSensor _sensor;
     public void UpdateInput()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetButtonDown("Fire1")) 
         {
            
             ToggleFlashlight();
-
+            
         }
 
     }
