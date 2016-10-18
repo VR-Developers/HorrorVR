@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class Light_Energy : MonoBehaviour {
@@ -9,6 +9,7 @@ public class Light_Energy : MonoBehaviour {
 	void Start () 
 	{
 		energy_bar_material = GetComponent<MeshRenderer> ().materials;
+       
 	}
 	
 	// Update is called once per frame
@@ -16,6 +17,7 @@ public class Light_Energy : MonoBehaviour {
 	{
 		if (Input.GetKeyDown(KeyCode.Alpha4)) {
 			SetRemainingLights (4);
+           
 		}
 
 		if (Input.GetKeyDown(KeyCode.Alpha3)) {
@@ -38,6 +40,7 @@ public class Light_Energy : MonoBehaviour {
 		{
 			case 4:
 			energy_bar_material[0].SetTextureOffset ("_MainTex", new Vector2 (0, 0.75f));
+             
 			break;
 
 			case 3:
